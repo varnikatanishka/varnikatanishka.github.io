@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <style>
+* {
+  box-sizing: border-box;
+}
 body {margin:0;}
 
 .navbar {
@@ -31,10 +34,39 @@ body {margin:0;}
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
+  
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #eeeaff;
+  color: #eeeaff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #0afddd;
+  color: white;
+}
 </style>
 </head>
 <body>
 
+<div class="content">
+  <button id="myBtn" onclick="myFunction()"><a href="https://varnikatanishka.github.io/space_tv.htm"> BACK TO HOME PAGE </a></button>
+</div>
+<script>
+var btn = document.getElementById("myBtn");
 <div class="navbar">
   <a href="https://varnikatanishka.github.io/gallery.htm">GALLERY</a>
   <a href="https://varnikatanishka.github.io/space_shuttle.htm">SPACE SHUTTLE</a>
